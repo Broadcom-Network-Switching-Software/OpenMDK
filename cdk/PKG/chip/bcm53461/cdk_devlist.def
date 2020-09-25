@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53461_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53461, BCM53461_VENDOR_ID, BCM53461_DEVICE_ID, BCM53461_REV_A0, \
+                  0, 0, \
+                  bcm56270_a0, bcm53461_a0, bcm53461_a0, \
+                  CDK_DEV_ARCH_XGSD, "Beagle", "BCM53460", \
+                  "8-Port 10GbE Multilayer Switch with Four 2.5GbE Links", 0, 0)
+#endif
+#endif
+

@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53393_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53393, BCM53393_VENDOR_ID, BCM53393_DEVICE_ID, BCM53393_REV_A0, \
+                  0, 0, \
+                  bcm56150_a0, bcm53393_a0, bcm53393_a0, \
+                  CDK_DEV_ARCH_XGSM, "Deerhound", "BCM53393", \
+                  "14-Port GbE SerDes Embedded Switch with Integrated CPU", 0, 0)
+#endif
+#endif
+

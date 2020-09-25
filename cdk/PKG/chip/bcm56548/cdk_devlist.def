@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56548_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56548, BCM56548_VENDOR_ID, BCM56548_DEVICE_ID, BCM56548_REV_A0, \
+                  0, 0, \
+                  bcm56340_a0, bcm56548_a0, bcm56548_a0, \
+                  CDK_DEV_ARCH_XGSM, "FireScout", "BCM56547", \
+                  "Stackable 28-Port GbE Ethernet Switch with Integrated CPU and 40GbE Uplink", 0, 0)
+#endif
+#endif
+

@@ -1,0 +1,17 @@
+#if CDK_CONFIG_INCLUDE_BCM53400_A0 == 1
+#ifndef BMD_CONFIG_EXCLUDE_BCM53400_A0
+BMD_DEVLIST_ENTRY(BCM53400, BCM53400_VENDOR_ID, BCM53400_DEVICE_ID, BCM53400_REV_A0, \
+                  0, 0, \
+                  bcm53400_a0, bcm53400_a0, bcm53400_a0, \
+                  CDK_DEV_ARCH_XGSD, "Greyhound", "BCM53400", \
+                  "16-Port 10GbE Ethernet Embedded Switch", 0, 0)
+#ifndef BMD_DEVLIST_SINGLE_PREFIX
+#  define BMD_DEVLIST_SINGLE_PREFIX bcm53400_a0_
+#else
+#  ifndef BMD_DEVLIST_MULTIPLE
+#    define BMD_DEVLIST_MULTIPLE
+#  endif
+#endif
+#endif
+#endif
+

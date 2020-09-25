@@ -1,0 +1,8 @@
+#if CDK_CONFIG_INCLUDE_BCM53134_A0 == 1
+CDK_DEVLIST_ENTRY(BCM53134, BCM53134_VENDOR_ID, BCM53134_DEVICE_ID, BCM53134_REV_A0, \
+                  0, 0, \
+                  bcm53134_a0, bcm53134_a0, bcm53134_a0, \
+                  CDK_DEV_ARCH_ROBO, "Starfighter3", "BCM53134", \
+                  "5-Port GE Switch With 4 Integrated PHYs", 0, 0)
+#endif
+

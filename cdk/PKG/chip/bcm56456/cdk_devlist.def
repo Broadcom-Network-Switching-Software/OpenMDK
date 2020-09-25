@@ -1,0 +1,30 @@
+#if CDK_CONFIG_INCLUDE_BCM56456_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56456, BCM56456_VENDOR_ID, BCM56456_DEVICE_ID, BCM56456_REV_A0, \
+                  0, 0, \
+                  bcm56450_a0, bcm56456_a0, bcm56456_a0, \
+                  CDK_DEV_ARCH_XGSM, "Katana2", "BCM56456", \
+                  "102.5 Gbps Integrated Multilayer Ethernet Switch and Traffic Manager", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56456_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56456, BCM56456_VENDOR_ID, BCM56456_DEVICE_ID, BCM56456_REV_B0, \
+                  0, 0, \
+                  bcm56450_b0, bcm56456_b0, bcm56456_b0, \
+                  CDK_DEV_ARCH_XGSM, "Katana2", "BCM56456", \
+                  "102.5 Gbps Integrated Multilayer Ethernet Switch and Traffic Manager", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56456_B1 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56456, BCM56456_VENDOR_ID, BCM56456_DEVICE_ID, BCM56456_REV_B1, \
+                  0, 0, \
+                  bcm56450_b0, bcm56456_b0, bcm56456_b1, \
+                  CDK_DEV_ARCH_XGSM, "Katana2", "BCM56456", \
+                  "102.5 Gbps Integrated Multilayer Ethernet Switch and Traffic Manager", 0, 0)
+#endif
+#endif
+

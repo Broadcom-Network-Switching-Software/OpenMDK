@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56048_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56048, BCM56048_VENDOR_ID, BCM56048_DEVICE_ID, BCM56048_REV_A0, \
+                  0, 0, \
+                  bcm56340_a0, bcm56048_a0, bcm56048_a0, \
+                  CDK_DEV_ARCH_XGSM, "Spiral", "BCM56047", \
+                  "28-Port GbE Port Extender with Eight 10GbE Uplinks", 0, 0)
+#endif
+#endif
+

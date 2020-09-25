@@ -1,0 +1,6 @@
+#if CDK_CONFIG_INCLUDE_BCM53570_A0 == 1
+#include "chip/bcm53570_a0_sym.c"
+#endif
+#if CDK_CONFIG_INCLUDE_BCM53570_B0 == 1
+#include "chip/bcm53570_b0_sym.c"
+#endif

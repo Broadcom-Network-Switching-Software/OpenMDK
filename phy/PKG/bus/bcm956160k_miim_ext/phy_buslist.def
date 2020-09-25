@@ -1,0 +1,4 @@
+#define PHY_BUS_BCM956160K_MIIM_EXT_INSTALLED
+extern phy_bus_t phy_bus_bcm956160k_miim_ext;
+extern phy_bus_t phy_bus_bcm956160k_gphy_bypass_miim_ext;
+

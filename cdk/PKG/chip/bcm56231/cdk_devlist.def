@@ -1,0 +1,20 @@
+#if CDK_CONFIG_INCLUDE_BCM56231_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56231, BCM56231_VENDOR_ID, BCM56231_DEVICE_ID, BCM56231_REV_B0, \
+                  0, 0, \
+                  bcm56334_b0, bcm56231_b0, bcm56231_b0, \
+                  CDK_DEV_ARCH_XGS, "Dagger", "BCM56334", \
+                  "6-Port GbE Multilayer Switch", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56231_B1 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56231, BCM56231_VENDOR_ID, BCM56231_DEVICE_ID, BCM56231_REV_B1, \
+                  0, 0, \
+                  bcm56334_b0, bcm56231_b0, bcm56231_b1, \
+                  CDK_DEV_ARCH_XGS, "Dagger", "BCM56334", \
+                  "6-Port GbE Multilayer Switch", 0, 0)
+#endif
+#endif
+

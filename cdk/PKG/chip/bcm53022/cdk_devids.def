@@ -1,0 +1,7 @@
+/* BCM53022 */
+#define BCM53022_VENDOR_ID                0x600d
+#define BCM53022_DEVICE_ID                0x87f0
+#define BCM53022_MODEL                    0x3022
+#define BCM53022_PROBEINFO            0x14040230
+#define BCM53022_REV_A0                     0x00
+

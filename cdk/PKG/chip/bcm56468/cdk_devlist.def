@@ -1,0 +1,20 @@
+#if CDK_CONFIG_INCLUDE_BCM56468_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56468, BCM56468_VENDOR_ID, BCM56468_DEVICE_ID, BCM56468_REV_A0, \
+                  0, 0, \
+                  bcm56260_a0, bcm56468_a0, bcm56468_a0, \
+                  CDK_DEV_ARCH_XGSD, "Enduro3", "BCM56465", \
+                  "24-Port GbE Multilayer Switch with Four 10GbE/HiGig Uplinks", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56468_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56468, BCM56468_VENDOR_ID, BCM56468_DEVICE_ID, BCM56468_REV_B0, \
+                  0, 0, \
+                  bcm56260_b0, bcm56468_b0, bcm56468_b0, \
+                  CDK_DEV_ARCH_XGSD, "Enduro3", "BCM56465", \
+                  "24-Port GbE Multilayer Switch with Four 10GbE/HiGig Uplinks", 0, 0)
+#endif
+#endif
+

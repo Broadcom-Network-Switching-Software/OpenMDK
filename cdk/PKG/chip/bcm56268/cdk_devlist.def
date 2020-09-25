@@ -1,0 +1,20 @@
+#if CDK_CONFIG_INCLUDE_BCM56268_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56268, BCM56268_VENDOR_ID, BCM56268_DEVICE_ID, BCM56268_REV_A0, \
+                  0, 0, \
+                  bcm56260_a0, bcm56268_a0, bcm56268_a0, \
+                  CDK_DEV_ARCH_XGSD, "Saber2", "BCM56260", \
+                  "50 Gbps Integrated Lower Power Carrier Ethernet Access Switch", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56268_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56268, BCM56268_VENDOR_ID, BCM56268_DEVICE_ID, BCM56268_REV_B0, \
+                  0, 0, \
+                  bcm56260_b0, bcm56268_b0, bcm56268_b0, \
+                  CDK_DEV_ARCH_XGSD, "Saber2", "BCM56260", \
+                  "50 Gbps Integrated Lower Power Carrier Ethernet Access Switch", 0, 0)
+#endif
+#endif
+

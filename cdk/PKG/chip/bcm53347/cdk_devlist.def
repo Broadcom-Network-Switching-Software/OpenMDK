@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53347_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53347, BCM53347_VENDOR_ID, BCM53347_DEVICE_ID, BCM53347_REV_A0, \
+                  0, 0, \
+                  bcm56150_a0, bcm53347_a0, bcm53347_a0, \
+                  CDK_DEV_ARCH_XGSM, "Wolfhound", "BCM53342", \
+                  "24-Port Managed GbE Switch with Four GbE Uplinks, Integrated CPU and Six QSGMII Interfaces", 0, 0)
+#endif
+#endif
+

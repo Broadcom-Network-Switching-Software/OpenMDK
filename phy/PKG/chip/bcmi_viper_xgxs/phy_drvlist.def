@@ -1,0 +1,3 @@
+#define BCMI_VIPER_XGXS_DRV_INSTALLED
+extern phy_driver_t bcmi_viper_xgxs_drv;
+

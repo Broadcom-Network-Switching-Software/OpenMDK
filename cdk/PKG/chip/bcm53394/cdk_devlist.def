@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53394_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53394, BCM53394_VENDOR_ID, BCM53394_DEVICE_ID, BCM53394_REV_A0, \
+                  0, 0, \
+                  bcm56150_a0, bcm53394_a0, bcm53394_a0, \
+                  CDK_DEV_ARCH_XGSM, "Deerhound", "BCM53393", \
+                  "10-Port GbE SerDes Embedded Switch with Integrated CPU and 4 10GbE Uplinks", 0, 0)
+#endif
+#endif
+

@@ -1,0 +1,17 @@
+#if CDK_CONFIG_INCLUDE_BCM56960_A0 == 1
+#ifndef BMD_CONFIG_EXCLUDE_BCM56960_A0
+BMD_DEVLIST_ENTRY(BCM56960, BCM56960_VENDOR_ID, BCM56960_DEVICE_ID, BCM56960_REV_A0, \
+                  0, 0, \
+                  bcm56960_a0, bcm56960_a0, bcm56960_a0, \
+                  CDK_DEV_ARCH_XGSD, "Tomahawk", "BCM56960", \
+                  "32x100G/64x40G/128x25G Ethernet Switch", 0, 0)
+#ifndef BMD_DEVLIST_SINGLE_PREFIX
+#  define BMD_DEVLIST_SINGLE_PREFIX bcm56960_a0_
+#else
+#  ifndef BMD_DEVLIST_MULTIPLE
+#    define BMD_DEVLIST_MULTIPLE
+#  endif
+#endif
+#endif
+#endif
+

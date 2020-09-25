@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56344_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56344, BCM56344_VENDOR_ID, BCM56344_DEVICE_ID, BCM56344_REV_A0, \
+                  0, 0, \
+                  bcm56340_a0, bcm56344_a0, bcm56344_a0, \
+                  CDK_DEV_ARCH_XGSM, "Helix4", "BCM56340", \
+                  "48-Port GbE Ethernet Multilayer Switch with Integrated CPU and Serial 10GbE Uplinks", 0, 0)
+#endif
+#endif
+

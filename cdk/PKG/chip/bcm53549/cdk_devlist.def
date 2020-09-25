@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53549_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53549, BCM53549_VENDOR_ID, BCM53549_DEVICE_ID, BCM53549_REV_A0, \
+                  0, 0, \
+                  bcm53540_a0, bcm53549_a0, bcm53549_a0, \
+                  CDK_DEV_ARCH_XGSD, "Wolfhound2", "BCM53540", \
+                  "24-Port GbE Switch w/ Max 8x2.5G Ports, 24 Integrated PHYs and CPU", 0, 0)
+#endif
+#endif
+

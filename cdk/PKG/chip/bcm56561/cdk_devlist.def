@@ -1,0 +1,30 @@
+#if CDK_CONFIG_INCLUDE_BCM56561_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56561, BCM56561_VENDOR_ID, BCM56561_DEVICE_ID, BCM56561_REV_A0, \
+                  0, 0, \
+                  bcm56560_a0, bcm56561_a0, bcm56561_a0, \
+                  CDK_DEV_ARCH_XGSD, "Apache", "BCM56560", \
+                  "720 Gbps Multilayer Switch 50x10GbE + 4x100GbE", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56561_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56561, BCM56561_VENDOR_ID, BCM56561_DEVICE_ID, BCM56561_REV_B0, \
+                  0, 0, \
+                  bcm56560_b0, bcm56561_b0, bcm56561_b0, \
+                  CDK_DEV_ARCH_XGSD, "Apache", "BCM56560", \
+                  "720 Gbps Multilayer Switch 50x10GbE + 4x100GbE", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56561_B1 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56561, BCM56561_VENDOR_ID, BCM56561_DEVICE_ID, BCM56561_REV_B1, \
+                  0, 0, \
+                  bcm56560_b0, bcm56561_b0, bcm56561_b1, \
+                  CDK_DEV_ARCH_XGSD, "Apache", "BCM56560", \
+                  "720 Gbps Multilayer Switch 50x10GbE + 4x100GbE", 0, 0)
+#endif
+#endif
+

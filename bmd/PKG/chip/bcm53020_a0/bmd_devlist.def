@@ -1,0 +1,17 @@
+#if CDK_CONFIG_INCLUDE_BCM53020_A0 == 1
+#ifndef BMD_CONFIG_EXCLUDE_BCM53020_A0
+BMD_DEVLIST_ENTRY(BCM53020, BCM53020_VENDOR_ID, BCM53020_DEVICE_ID, BCM53020_REV_A0, \
+                  BCM53020_MODEL, BCM53020_PROBEINFO, \
+                  bcm53020_a0, bcm53020_a0, bcm53020_a0, \
+                  CDK_DEV_ARCH_ROBO, "Northstar+", "BCM53020", \
+                  "8-Port GbE Switch With 5 Integrated PHYs", 0, 0)
+#ifndef BMD_DEVLIST_SINGLE_PREFIX
+#  define BMD_DEVLIST_SINGLE_PREFIX bcm53020_a0_
+#else
+#  ifndef BMD_DEVLIST_MULTIPLE
+#    define BMD_DEVLIST_MULTIPLE
+#  endif
+#endif
+#endif
+#endif
+

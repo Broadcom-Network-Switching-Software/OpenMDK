@@ -1,0 +1,8 @@
+#if CDK_CONFIG_INCLUDE_BCM56860_A0 == 1
+CDK_DEVLIST_ENTRY(BCM56860, BCM56860_VENDOR_ID, BCM56860_DEVICE_ID, BCM56860_REV_A0, \
+                  0, 0, \
+                  bcm56860_a0, bcm56860_a0, bcm56860_a0, \
+                  CDK_DEV_ARCH_XGSM, "Trident2+", "BCM56860", \
+                  "104x10G/32x40G/8x100G Ethernet Multilayer Switch", 0, 0)
+#endif
+

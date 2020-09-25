@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53025_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53025, BCM53025_VENDOR_ID, BCM53025_DEVICE_ID, BCM53025_REV_A0, \
+                  BCM53025_MODEL, BCM53025_PROBEINFO, \
+                  bcm53020_a0, bcm53025_a0, bcm53025_a0, \
+                  CDK_DEV_ARCH_ROBO, "Northstar+", "BCM53020", \
+                  "8-Port GbE Switch With 5 Integrated PHYs", 0, 0)
+#endif
+#endif
+

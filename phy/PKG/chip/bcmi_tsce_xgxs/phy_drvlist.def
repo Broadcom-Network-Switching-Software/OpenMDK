@@ -1,0 +1,3 @@
+#define BCMI_TSCE_XGXS_DRV_INSTALLED
+extern phy_driver_t bcmi_tsce_xgxs_drv;
+

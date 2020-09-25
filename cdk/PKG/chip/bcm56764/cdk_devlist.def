@@ -1,0 +1,30 @@
+#if CDK_CONFIG_INCLUDE_BCM56764_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56764, BCM56764_VENDOR_ID, BCM56764_DEVICE_ID, BCM56764_REV_A0, \
+                  0, 0, \
+                  bcm56560_a0, bcm56764_a0, bcm56764_a0, \
+                  CDK_DEV_ARCH_XGSD, "Maverick", "BCM56560", \
+                  "720 Gbps Multilayer Switch 72x 10GbE or 18x 40GbE (1.44MB)", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56764_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56764, BCM56764_VENDOR_ID, BCM56764_DEVICE_ID, BCM56764_REV_B0, \
+                  0, 0, \
+                  bcm56560_b0, bcm56764_b0, bcm56764_b0, \
+                  CDK_DEV_ARCH_XGSD, "Maverick", "BCM56560", \
+                  "720 Gbps Multilayer Switch 72x 10GbE or 18x 40GbE (1.44MB)", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56764_B1 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56764, BCM56764_VENDOR_ID, BCM56764_DEVICE_ID, BCM56764_REV_B1, \
+                  0, 0, \
+                  bcm56560_b0, bcm56764_b0, bcm56764_b1, \
+                  CDK_DEV_ARCH_XGSD, "Maverick", "BCM56560", \
+                  "720 Gbps Multilayer Switch 72x 10GbE or 18x 40GbE (1.44MB)", 0, 0)
+#endif
+#endif
+

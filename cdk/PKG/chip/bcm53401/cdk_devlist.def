@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53401_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53401, BCM53401_VENDOR_ID, BCM53401_DEVICE_ID, BCM53401_REV_A0, \
+                  0, 0, \
+                  bcm53400_a0, bcm53401_a0, bcm53401_a0, \
+                  CDK_DEV_ARCH_XGSD, "Greyhound", "BCM53400", \
+                  "16-Port 10GbE Ethernet Embedded Switch", 0, 0)
+#endif
+#endif
+

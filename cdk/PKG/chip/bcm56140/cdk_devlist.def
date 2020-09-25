@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56140_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56140, BCM56140_VENDOR_ID, BCM56140_DEVICE_ID, BCM56140_REV_A0, \
+                  0, 0, \
+                  bcm56142_a0, bcm56140_a0, bcm56140_a0, \
+                  CDK_DEV_ARCH_XGS, "Hurricane", "BCM56142", \
+                  "6-Port GbE Multilayer Switch with Two 10-GbE/HiGig2 Uplink Ports", 0, 0)
+#endif
+#endif
+

@@ -1,0 +1,20 @@
+#if CDK_CONFIG_INCLUDE_BCM56068_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56068, BCM56068_VENDOR_ID, BCM56068_DEVICE_ID, BCM56068_REV_B0, \
+                  0, 0, \
+                  bcm56560_b0, bcm56068_b0, bcm56068_b0, \
+                  CDK_DEV_ARCH_XGSD, "Ranger2+", "BCM56560", \
+                  "720 Gbps Multilayer Switch 72x 10GbE or 18x 40GbE (1.44MB)", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56068_B1 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56068, BCM56068_VENDOR_ID, BCM56068_DEVICE_ID, BCM56068_REV_B1, \
+                  0, 0, \
+                  bcm56560_b0, bcm56068_b0, bcm56068_b1, \
+                  CDK_DEV_ARCH_XGSD, "Ranger2+", "BCM56560", \
+                  "720 Gbps Multilayer Switch 72x 10GbE or 18x 40GbE (1.44MB)", 0, 0)
+#endif
+#endif
+

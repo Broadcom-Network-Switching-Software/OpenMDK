@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56233_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56233, BCM56233_VENDOR_ID, BCM56233_DEVICE_ID, BCM56233_REV_B0, \
+                  0, 0, \
+                  bcm56260_b0, bcm56233_b0, bcm56233_b0, \
+                  CDK_DEV_ARCH_XGSD, "Dagger2", "BCM56260", \
+                  "7-Port GbE Multilayer Switch with 1 2.5-GbE Uplink Ports", 0, 0)
+#endif
+#endif
+

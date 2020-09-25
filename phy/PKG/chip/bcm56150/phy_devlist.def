@@ -1,0 +1,3 @@
+#if PHY_CONFIG_INCLUDE_BCM56150 == 1 || defined(PHY_DEVLIST_INCLUDE_ALL)
+PHY_DEVLIST_ENTRY(BCM56150, bcm56150, 0, "Internal Octal QSGMII Gigabit PHY Driver", 0, 0)
+#endif

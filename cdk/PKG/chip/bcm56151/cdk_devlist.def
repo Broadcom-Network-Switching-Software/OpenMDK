@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56151_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56151, BCM56151_VENDOR_ID, BCM56151_DEVICE_ID, BCM56151_REV_A0, \
+                  0, 0, \
+                  bcm56150_a0, bcm56151_a0, bcm56151_a0, \
+                  CDK_DEV_ARCH_XGSM, "Hurricane2", "BCM56150", \
+                  "24-Port Managed GbE Switch with Four GbE Uplinks, Integrated CPU and Six QSGMII Interfaces", 0, 0)
+#endif
+#endif
+

@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56042_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56042, BCM56042_VENDOR_ID, BCM56042_DEVICE_ID, BCM56042_REV_A0, \
+                  0, 0, \
+                  bcm56340_a0, bcm56042_a0, bcm56042_a0, \
+                  CDK_DEV_ARCH_XGSM, "Ranger", "BCM56040", \
+                  "24-Port 2.5G/1G Ethernet Switch with Integrated CPU for Embedded Applications", 0, 0)
+#endif
+#endif
+

@@ -1,0 +1,17 @@
+#if CDK_CONFIG_INCLUDE_BCM56560_B0 == 1
+#ifndef BMD_CONFIG_EXCLUDE_BCM56560_B0
+BMD_DEVLIST_ENTRY(BCM56560, BCM56560_VENDOR_ID, BCM56560_DEVICE_ID, BCM56560_REV_B0, \
+                  0, 0, \
+                  bcm56560_b0, bcm56560_b0, bcm56560_b0, \
+                  CDK_DEV_ARCH_XGSD, "Apache", "BCM56560", \
+                  "10G aggregation switch for Service Provider", 0, 0)
+#ifndef BMD_DEVLIST_SINGLE_PREFIX
+#  define BMD_DEVLIST_SINGLE_PREFIX bcm56560_b0_
+#else
+#  ifndef BMD_DEVLIST_MULTIPLE
+#    define BMD_DEVLIST_MULTIPLE
+#  endif
+#endif
+#endif
+#endif
+

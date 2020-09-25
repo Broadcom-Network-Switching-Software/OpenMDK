@@ -1,0 +1,20 @@
+#if CDK_CONFIG_INCLUDE_BCM56170_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56170, BCM56170_VENDOR_ID, BCM56170_DEVICE_ID, BCM56170_REV_A0, \
+                  0, 0, \
+                  bcm53570_a0, bcm56170_a0, bcm56170_a0, \
+                  CDK_DEV_ARCH_XGSD, "Hurricane3-MG", "BCM56170", \
+                  "High Port Count Integrated Switch With 100-FX/1G/2.5G/5G/10G/25G-Capable SerDes Lanes", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56170_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56170, BCM56170_VENDOR_ID, BCM56170_DEVICE_ID, BCM56170_REV_B0, \
+                  0, 0, \
+                  bcm53570_b0, bcm56170_b0, bcm56170_b0, \
+                  CDK_DEV_ARCH_XGSD, "Hurricane3-MG", "BCM56170", \
+                  "High Port Count Integrated Switch With 100-FX/1G/2.5G/5G/10G/25G-Capable SerDes Lanes", 0, 0)
+#endif
+#endif
+

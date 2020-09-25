@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56060_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56060, BCM56060_VENDOR_ID, BCM56060_DEVICE_ID, BCM56060_REV_A0, \
+                  0, 0, \
+                  bcm53400_a0, bcm56060_a0, bcm56060_a0, \
+                  CDK_DEV_ARCH_XGSD, "Ranger2", "BCM56060", \
+                  "16-Port 10GbE Ethernet Embedded Switch with Optional CPU", 0, 0)
+#endif
+#endif
+

@@ -1,0 +1,30 @@
+#if CDK_CONFIG_INCLUDE_BCM56567_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56567, BCM56567_VENDOR_ID, BCM56567_DEVICE_ID, BCM56567_REV_A0, \
+                  0, 0, \
+                  bcm56560_a0, bcm56567_a0, bcm56567_a0, \
+                  CDK_DEV_ARCH_XGSD, "Firebolt5", "BCM56560", \
+                  "480 Gbps Multilayer Switch 24x 10GbE + 24x 1GbE + 4x 25GbE (1.23MB)", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56567_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56567, BCM56567_VENDOR_ID, BCM56567_DEVICE_ID, BCM56567_REV_B0, \
+                  0, 0, \
+                  bcm56560_b0, bcm56567_b0, bcm56567_b0, \
+                  CDK_DEV_ARCH_XGSD, "Firebolt5", "BCM56560", \
+                  "480 Gbps Multilayer Switch 24x 10GbE + 24x 1GbE + 4x 25GbE (1.23MB)", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56567_B1 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56567, BCM56567_VENDOR_ID, BCM56567_DEVICE_ID, BCM56567_REV_B1, \
+                  0, 0, \
+                  bcm56560_b0, bcm56567_b0, bcm56567_b1, \
+                  CDK_DEV_ARCH_XGSD, "Firebolt5", "BCM56560", \
+                  "480 Gbps Multilayer Switch 24x 10GbE + 24x 1GbE + 4x 25GbE (1.23MB)", 0, 0)
+#endif
+#endif
+

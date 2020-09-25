@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM56272_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56272, BCM56272_VENDOR_ID, BCM56272_DEVICE_ID, BCM56272_REV_A0, \
+                  0, 0, \
+                  bcm56270_a0, bcm56272_a0, bcm56272_a0, \
+                  CDK_DEV_ARCH_XGSD, "Metrolite", "BCM56270", \
+                  "90 Gbps Integrated Lower Power Carrier Ethernet Access Switch", 0, 0)
+#endif
+#endif
+

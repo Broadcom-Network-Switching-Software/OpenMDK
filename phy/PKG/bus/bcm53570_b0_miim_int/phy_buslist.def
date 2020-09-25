@@ -1,0 +1,4 @@
+#if defined(CDK_CONFIG_INCLUDE_BCM53570_B0) && CDK_CONFIG_INCLUDE_BCM53570_B0 == 1
+#define PHY_BUS_BCM53570_B0_MIIM_INT_INSTALLED
+extern phy_bus_t phy_bus_bcm53570_b0_miim_int;
+#endif

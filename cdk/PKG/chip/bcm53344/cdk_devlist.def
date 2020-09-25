@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53344_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53344, BCM53344_VENDOR_ID, BCM53344_DEVICE_ID, BCM53344_REV_A0, \
+                  0, 0, \
+                  bcm56150_a0, bcm53344_a0, bcm53344_a0, \
+                  CDK_DEV_ARCH_XGSM, "Wolfhound", "BCM53342", \
+                  "24-Port WebSmart GbE Switch with Four GbE Uplinks, Integrated CPU and 16 Copper PHYs", 0, 0)
+#endif
+#endif
+

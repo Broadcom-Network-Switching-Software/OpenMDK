@@ -1,0 +1,30 @@
+#if CDK_CONFIG_INCLUDE_BCM55455_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM55455, BCM55455_VENDOR_ID, BCM55455_DEVICE_ID, BCM55455_REV_A0, \
+                  0, 0, \
+                  bcm56450_a0, bcm55455_a0, bcm55455_a0, \
+                  CDK_DEV_ARCH_XGSM, "Katana2", "BCM56450", \
+                  "102.5 Gbps Integrated Ethernet Switch without Layer 3 Routing and MPLS Features", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM55455_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM55455, BCM55455_VENDOR_ID, BCM55455_DEVICE_ID, BCM55455_REV_B0, \
+                  0, 0, \
+                  bcm56450_b0, bcm55455_b0, bcm55455_b0, \
+                  CDK_DEV_ARCH_XGSM, "Katana2", "BCM56450", \
+                  "102.5 Gbps Integrated Ethernet Switch without Layer 3 Routing and MPLS Features", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM55455_B1 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM55455, BCM55455_VENDOR_ID, BCM55455_DEVICE_ID, BCM55455_REV_B1, \
+                  0, 0, \
+                  bcm56450_b0, bcm55455_b0, bcm55455_b1, \
+                  CDK_DEV_ARCH_XGSM, "Katana2", "BCM56450", \
+                  "102.5 Gbps Integrated Ethernet Switch without Layer 3 Routing and MPLS Features", 0, 0)
+#endif
+#endif
+

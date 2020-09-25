@@ -1,0 +1,18 @@
+#if CDK_CONFIG_INCLUDE_BCM56160_A0 == 1
+CDK_DEVLIST_ENTRY(BCM56160, BCM56160_VENDOR_ID, BCM56160_DEVICE_ID, BCM56160_REV_A0, \
+                  0, 0, \
+                  bcm56160_a0, bcm56160_a0, bcm56160_a0, \
+                  CDK_DEV_ARCH_XGSD, "Hurricane3", "BCM56160", \
+                  "24-Port GbE Ethernet Switch with Two 40GbE/HiGig2 Ports, Integrated Copper PHYs and CPU", 0, 0)
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56160_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56160, BCM56160_VENDOR_ID, BCM56160_DEVICE_ID, BCM56160_REV_B0, \
+                  0, 0, \
+                  bcm56160_a0, bcm56160_a0, bcm56160_b0, \
+                  CDK_DEV_ARCH_XGSD, "Hurricane3", "BCM56160", \
+                  "24-Port GbE Ethernet Switch with Two 40GbE/HiGig2 Ports, Integrated Copper PHYs and CPU", 0, 0)
+#endif
+#endif
+

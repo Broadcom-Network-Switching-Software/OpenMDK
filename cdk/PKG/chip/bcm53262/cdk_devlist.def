@@ -1,0 +1,28 @@
+#if CDK_CONFIG_INCLUDE_BCM53262_A0 == 1
+CDK_DEVLIST_ENTRY(BCM53262, BCM53262_VENDOR_ID, BCM53262_DEVICE_ID, BCM53262_REV_A0, \
+                  0, 0, \
+                  bcm53262_a0, bcm53262_a0, bcm53262_a0, \
+                  CDK_DEV_ARCH_ROBO, "Harrier", "BCM53262", \
+                  "Managed Switch with 24 FE ports + 4 GbE Interfaces", 0, 0)
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM53262_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53262, BCM53262_VENDOR_ID, BCM53262_DEVICE_ID, BCM53262_REV_B0, \
+                  0, 0, \
+                  bcm53262_a0, bcm53262_a0, bcm53262_b0, \
+                  CDK_DEV_ARCH_ROBO, "Harrier", "BCM53262", \
+                  "Managed Switch with 24 FE ports + 4 GbE Interfaces", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM53262_B1 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53262, BCM53262_VENDOR_ID, BCM53262_DEVICE_ID, BCM53262_REV_B1, \
+                  0, 0, \
+                  bcm53262_a0, bcm53262_a0, bcm53262_b1, \
+                  CDK_DEV_ARCH_ROBO, "Harrier", "BCM53262", \
+                  "Managed Switch with 24 FE ports + 4 GbE Interfaces", 0, 0)
+#endif
+#endif
+

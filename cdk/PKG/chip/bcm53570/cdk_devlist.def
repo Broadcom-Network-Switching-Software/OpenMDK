@@ -1,0 +1,16 @@
+#if CDK_CONFIG_INCLUDE_BCM53570_A0 == 1
+CDK_DEVLIST_ENTRY(BCM53570, BCM53570_VENDOR_ID, BCM53570_DEVICE_ID, BCM53570_REV_A0, \
+                  0, 0, \
+                  bcm53570_a0, bcm53570_a0, bcm53570_a0, \
+                  CDK_DEV_ARCH_XGSD, "Greyhound2", "BCM53570", \
+                  "High Port Count Integrated Switch With 100-FX/1G/2.5G/5G/10G/25G-Capable SerDes Lanes", 0, 0)
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM53570_B0 == 1
+CDK_DEVLIST_ENTRY(BCM53570, BCM53570_VENDOR_ID, BCM53570_DEVICE_ID, BCM53570_REV_B0, \
+                  0, 0, \
+                  bcm53570_b0, bcm53570_b0, bcm53570_b0, \
+                  CDK_DEV_ARCH_XGSD, "Greyhound2", "BCM53570", \
+                  "High Port Count Integrated Switch With 100-FX/1G/2.5G/5G/10G/25G-Capable SerDes Lanes", 0, 0)
+#endif
+

@@ -1,0 +1,76 @@
+/*
+ * 
+ * This software is governed by the Broadcom Switch APIs license.
+ * This license is set out in https://raw.githubusercontent.com/Broadcom-Network-Switching-Software/OpenMDK/master/Legal/LICENSE file.
+ * 
+ * Copyright 2007-2020 Broadcom Inc. All rights reserved.
+ */
+#include <bmd_config.h>
+#if CDK_CONFIG_INCLUDE_BCM53400_A0 == 1
+
+#include <bmd/bmd.h>
+#include <bmdi/arch/xgsd_mac_util.h>
+
+#include <cdk/arch/xgsd_schan.h>
+#include <cdk/cdk_debug.h>
+#include <cdk/cdk_device.h>
+#include <cdk/cdk_error.h>
+#include <cdk/chip/bcm53400_a0_defs.h>
+
+#include "bcm53400_a0_bmd.h"
+#include "bcm53400_a0_internal.h"
+
+static int
+l2x_insert(int unit, int port, int vlan, const bmd_mac_addr_t *mac_addr)
+{
+    int lport;
+    int modid = 0;
+    int ipipe_blk;
+    L2Xm_t l2x;
+    PORT_TABm_t port_tab;
+    uint32_t fval[2];
+    schan_msg_t schan_msg;
+
+    lport = P2L(unit, port);
+
+    if (READ_PORT_TABm(unit, lport, &port_tab)) {
+        return CDK_E_IO;
+    }
+    modid = PORT_TABm_MY_MODIDf_GET(port_tab);
+
+    L2Xm_CLR(l2x);
+    xgsd_mac_to_field_val(mac_addr->b, fval);
+    L2Xm_L2_MAC_ADDRf_SET(l2x, fval);
+    L2Xm_L2_VLAN_IDf_SET(l2x, vlan);
+    L2Xm_L2_MODULE_IDf_SET(l2x, modid);
+    L2Xm_L2_PORT_NUMf_SET(l2x, lport);
+    L2Xm_L2_STATIC_BITf_SET(l2x, 1);
+    L2Xm_VALIDf_SET(l2x, 1);
+
+    if ((ipipe_blk = cdk_xgsd_block_number(unit, BLKTYPE_IPIPE, 0)) < 0) {
+        return CDK_E_INTERNAL;
+    }
+
+    /* Write message to S-Channel */
+    SCHAN_MSG_CLEAR(&schan_msg);
+    SCMH_OPCODE_SET(schan_msg.gencmd.header, TABLE_INSERT_CMD_MSG);
+    SCMH_DSTBLK_SET(schan_msg.gencmd.header, ipipe_blk); 
+    SCMH_DATALEN_SET(schan_msg.gencmd.header, 16); 
+    CDK_MEMCPY(schan_msg.gencmd.data, &l2x, sizeof(l2x));
+    schan_msg.gencmd.address = L2Xm;
+
+    /* Write header word + L2X entry */
+    return cdk_xgsd_schan_op(unit, &schan_msg, 6, 0);
+}
+
+int
+bcm53400_a0_bmd_port_mac_addr_add(int unit, int port, int vlan, const bmd_mac_addr_t *mac_addr)
+{
+    BMD_CHECK_UNIT(unit);
+    BMD_CHECK_VLAN(unit, vlan);
+    BMD_CHECK_PORT(unit, port);
+
+    return l2x_insert(unit, port, vlan, mac_addr);
+}
+
+#endif /* CDK_CONFIG_INCLUDE_BCM53400_A0 */

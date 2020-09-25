@@ -1,0 +1,8 @@
+#if CDK_CONFIG_INCLUDE_BCM53242_A0 == 1
+CDK_DEVLIST_ENTRY(BCM53242, BCM53242_VENDOR_ID, BCM53242_DEVICE_ID, BCM53242_REV_A0, \
+                  0, 0, \
+                  bcm53242_a0, bcm53242_a0, bcm53242_a0, \
+                  CDK_DEV_ARCH_ROBO, "Harrier", "BCM53242", \
+                  "Managed Switch with 24 FE ports + 2 GbE Interfaces", 0, 0)
+#endif
+

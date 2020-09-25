@@ -1,0 +1,10 @@
+#if CDK_CONFIG_INCLUDE_BCM53456_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM53456, BCM53456_VENDOR_ID, BCM53456_DEVICE_ID, BCM53456_REV_A0, \
+                  0, 0, \
+                  bcm53400_a0, bcm53456_a0, bcm53456_a0, \
+                  CDK_DEV_ARCH_XGSD, "Bloodhound", "BCM53454", \
+                  "2.5G Ethernet Embedded Switch", 0, 0)
+#endif
+#endif
+

@@ -1,0 +1,3 @@
+#if PHY_CONFIG_INCLUDE_BCM54292 == 1 || defined(PHY_DEVLIST_INCLUDE_ALL)
+PHY_DEVLIST_ENTRY(BCM54292, bcm54292, 0, "Octal QSGMII Copper Gigabit Ethernet Transceiver", 0, 0)
+#endif

@@ -1,0 +1,20 @@
+#if CDK_CONFIG_INCLUDE_BCM56461_A0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56461, BCM56461_VENDOR_ID, BCM56461_DEVICE_ID, BCM56461_REV_A0, \
+                  0, 0, \
+                  bcm56260_a0, bcm56461_a0, bcm56461_a0, \
+                  CDK_DEV_ARCH_XGSD, "Saber2+", "BCM56460", \
+                  "24-Port GbE Multilayer Switch with Four 10GbE/HiGig Uplinks", 0, 0)
+#endif
+#endif
+
+#if CDK_CONFIG_INCLUDE_BCM56461_B0 == 1
+#ifdef CDK_DEVLIST_INCLUDE_ALL
+CDK_DEVLIST_ENTRY(BCM56461, BCM56461_VENDOR_ID, BCM56461_DEVICE_ID, BCM56461_REV_B0, \
+                  0, 0, \
+                  bcm56260_b0, bcm56461_b0, bcm56461_b0, \
+                  CDK_DEV_ARCH_XGSD, "Saber2+", "BCM56460", \
+                  "24-Port GbE Multilayer Switch with Four 10GbE/HiGig Uplinks", 0, 0)
+#endif
+#endif
+
